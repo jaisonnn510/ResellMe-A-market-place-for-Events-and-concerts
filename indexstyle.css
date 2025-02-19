@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Evenly distribute items */
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+h4 a{
+    color:black;
+    font-size: 20px;
+}
+
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0055;
+    margin-left: 0; /* Remove any margin on the left */
+}
+
+.sell-tickets {
+    background-color:#ff0055; /* Matches the header background */
+    border: none; /* Removes border */
+    outline: none;
+    color:white; /* Black text color */
+    cursor: pointer; /* Pointer cursor for clickable feel */
+    font-size: 16px;
+    padding: 0; /* Removes padding */
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    padding: 8px;
+    font-size: 20px;
+    color: black;
+    border-radius: 6px;
+    background: transparent;
+    outline: none;
+    
+}
+
+.sell-tickets a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent button */
+    font-weight: normal; /* Matches header text weight */
+}
+
+.about-us a{
+    text-decoration:none;
+}
+
+h4 .about-us{
+    color: black;
+}
+
+.second-section {
+    text-align: center;
+    padding: 120px 20px 20px;
+    margin-top: 60px;
+}
+
+.second-section h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.second-section h1 span {
+    color: #ff0055;
+}
+
+.search-bar-container {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+button .view-more-btn{
+    width: 300px;
+}
+
+.search-bar-container .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none; /* So the icon doesn't block clicking on the input */
+}
+
+.search-bar-container input {
+    width: 100%;
+    padding: 10px 20px 10px 40px; /* Add left padding to make room for the icon */
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+.third-section {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.third-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.third-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.fourth-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.fourth-section  .view{
+    background-color: #ff0055;
+ }
+
+.fourth-section .events {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fourth-section .event-card {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fourth-section .event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.fourth-section .event-card .event-info {
+    padding: 20px;
+}
+
+.fourth-section .event-card .event-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-info a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-div {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .second-section h1 {
+        font-size: 24px;
+    }
+
+    .search-bar-section input {
+        width: 90%;
+    }
+
+    .fourth-section .events {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .header-div > * {
+        margin: 5px;
+    }
+
+    .second-section h1 {
+        font-size: 20px;
+    }
+
+    .second-section {
+        padding: 80px 10px 10px;
+    }
+
+    .fourth-section .event-card {
+        width: 90%;
+    }
+}
